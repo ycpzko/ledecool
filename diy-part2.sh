@@ -12,3 +12,5 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.6.254/g' package/base-files/files/bin/config_generate
+sed -i 's/Meta_Matrix/g' package/base-files/files/bin/config_generate
+sed -i "s/OpenWrt /github build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
